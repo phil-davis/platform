@@ -24,7 +24,7 @@ class DeleteUsecaseSpec extends ObjectBehavior
         $this->shouldHaveType('Ushahidi\Core\Usecase\DeleteUsecase');
     }
 
-    function it_fails_when_no_identifer_exists()
+    function it_fails_when_no_identifier_exists()
     {
         $this->shouldThrow('InvalidArgumentException')->duringInteract();
     }

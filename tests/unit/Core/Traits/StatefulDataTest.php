@@ -28,10 +28,10 @@ class StatefulDataTest extends \PHPUnit\Framework\TestCase
     {
         $this->setPostTestData();
 
-        // Construct StaefulData for Current Post
+        // Construct StatefulData for Current Post
         $mock = new MockPostData($this->test_post_data_current);
 
-        // Set StaefulData from updated Post
+        // Set StatefulData from updated Post
         $entity = $mock->setState($this->test_post_data_new);
 
         $this->assertEquals('Updated Test Post', $entity->title);
@@ -183,7 +183,7 @@ class StatefulDataTest extends \PHPUnit\Framework\TestCase
             'slug'            => '*slug',
             'content'         => 'string',
             'author_email'    => 'string', /* @todo email filter */
-            'author_realname' => 'string', /* @todo redundent with user record */
+            'author_realname' => 'string', /* @todo redundant with user record */
             'status'          => 'string',
             'created'         => 'int',
             'updated'         => 'int',

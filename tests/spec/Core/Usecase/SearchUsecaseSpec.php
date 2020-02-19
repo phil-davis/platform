@@ -52,7 +52,7 @@ class SearchUsecaseSpec extends ObjectBehavior
         $this->shouldThrow('Ushahidi\Core\Exception\AuthorizerException')->duringInteract();
     }
 
-    function it_searchs_for_multiple_records($auth, $repo, $format, $search, Entity $entity, Entity $result)
+    function it_searches_for_multiple_records($auth, $repo, $format, $search, Entity $entity, Entity $result)
     {
         // ... fetch an empty entity
         $this->tryGetEntity($repo, $entity);

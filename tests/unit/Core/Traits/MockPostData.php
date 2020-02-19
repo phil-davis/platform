@@ -5,13 +5,13 @@ namespace Tests\Unit\Core\Traits;
 class MockPostData
 {
     use \Ushahidi\Core\Traits\StatefulData;
-    
+
     protected $id;
     protected $parent_id;
     protected $form_id;
     protected $user_id;
     protected $message_id;
-    // Color is taken from the asscoiated form entity
+    // Color is taken from the associated form entity
     protected $color;
     protected $type;
     protected $title;
@@ -72,7 +72,7 @@ class MockPostData
             'slug'            => '*slug',
             'content'         => 'string',
             'author_email'    => 'string', /* @todo email filter */
-            'author_realname' => 'string', /* @todo redundent with user record */
+            'author_realname' => 'string', /* @todo redundant with user record */
             'status'          => 'string',
             'created'         => 'int',
             'updated'         => 'int',

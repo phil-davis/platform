@@ -30,7 +30,7 @@ Feature: Testing the DataProviders API
 		And the "count" property equals "4"
 		Then the guzzle status code should be 200
 
-	Scenario: Geting A Non-Existent Data Provider Should Fail
+	Scenario: Getting A Non-Existent Data Provider Should Fail
 		Given that I want to get all "Dataprovider"
 		When I request "/dataproviders/doesnotexist"
 		Then the guzzle status code should be 404

@@ -673,7 +673,7 @@ Feature: Testing the Posts API
 		Then the guzzle status code should be 200
 
 	@update
-	Scenario: Updating a Post using JSON date formate
+	Scenario: Updating a Post using JSON date format
 		Given that I want to update a "Post"
 		And that the request "data" is:
 			"""

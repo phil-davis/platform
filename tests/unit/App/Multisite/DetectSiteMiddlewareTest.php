@@ -114,7 +114,7 @@ class DetectSiteMiddlewareTest extends TestCase
         });
     }
 
-    public function testSiteSetSuccesfully()
+    public function testSiteSetSuccessfully()
     {
         $multisite = M::mock(MultisiteManager::class);
         $middleware = new DetectSiteMiddleware($multisite);

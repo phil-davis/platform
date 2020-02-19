@@ -1,5 +1,5 @@
 @oauth2Skip @users @usersettings
-Feature: Testing the Form Settingss API
+Feature: Testing the Form Settings API
 
     Scenario: Creating a new Setting
         Given that I want to make a new "Setting"

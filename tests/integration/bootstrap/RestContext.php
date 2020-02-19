@@ -446,7 +446,7 @@ class RestContext implements Context
         if ($actualPropertyValue === null) {
             throw new \Exception("Property '".$propertyName."' is not set!\n");
         }
-        // Check the value - note this has to use != since $propertValue
+        // Check the value - note this has to use != since $propertyValue
         // is always a string so strict comparison would fail.
         if ($actualPropertyValue != $propertyValue) {
             throw new \Exception(

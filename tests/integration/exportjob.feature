@@ -8,7 +8,7 @@ Feature: Testing the Export Job API
           """
           {
             "fields":"test",
-            "filters": 
+            "filters":
             {
               "status" : ["published","draft"],
               "has_location" : "all",
@@ -72,7 +72,7 @@ Feature: Testing the Export Job API
         And the type of the "count" property is "numeric"
         And the "count" property equals "1"
         Then the guzzle status code should be 200
-    Scenario: A basic user (without permisions) can't get exports
+    Scenario: A basic user (without permissions) can't get exports
         Given that I want to get all "ExportJob"
         And that the oauth token is "testbasicuser"
         When I request "/exports/jobs"
